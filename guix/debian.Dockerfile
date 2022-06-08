@@ -26,6 +26,6 @@ CMD guix-daemon \
       --build-users-group=guixbuild   \
       --substitute-urls="https://ci.guix.gnu.org"
 
-RUN git clone https://github.com/bitcoin/bitcoin.git /bitcoin
+RUN git clone https://github.com/Munkybooty/dash.git -b backports-0.19-guix /dash
 
-WORKDIR /bitcoin
+WORKDIR /dash

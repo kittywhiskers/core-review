@@ -48,6 +48,6 @@ RUN for i in $(seq -w 1 ${builder_count}); do    \
 
 CMD ["/root/.config/guix/current/bin/guix-daemon","--build-users-group=guixbuild"]
 
-RUN git clone https://github.com/bitcoin/bitcoin.git /bitcoin
+RUN git clone https://github.com/Munkybooty/dash.git -b backports-0.19-guix /dash
 
-WORKDIR /bitcoin
+WORKDIR /dash
